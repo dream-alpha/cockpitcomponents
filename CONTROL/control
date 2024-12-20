@@ -1,0 +1,7 @@
+Description: ComponentsCockpit
+Maintainer: dream-alpha
+Package: enigma2-plugin-skincomponents-cockpit
+Version: 5.1.4
+Architecture: all
+Conflicts: enigma2-plugin-systemplugins-cockpitcomponents, enigma2-skincomponents-compatibilitycomponents, enigma2-plugin-systemplugins-componentscockpit
+Replaces: enigma2-plugin-systemplugins-cockpitcomponents, enigma2-skincomponents-compatibilitycomponents, enigma2-plugin-systemplugins-componentscockpit

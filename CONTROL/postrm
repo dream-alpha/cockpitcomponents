@@ -1,0 +1,14 @@
+#!/bin/sh
+if [ "$1" = "remove" ]; then
+	rm -rf /usr/lib/enigma2/python/Plugins/SystemPlugins/ComponentsCockpit > /dev/null 2>&1
+	rm /usr/lib/enigma2/python/Components/Renderer/COC* > /dev/null 2>&1
+	rm /usr/lib/enigma2/python/Components/Converter/COC* > /dev/null 2>&1
+	rm /usr/lib/enigma2/python/Components/Sources/COC* > /dev/null 2>&1
+	echo "ComponentsCockpit plugin removed successfully."
+else
+	find /usr/lib/enigma2/python/Plugins/SytemPlugins/ComponentsCockpit -type f -name "*.pyo" -exec rm -f {} \; > /dev/null 2>&1
+	find /usr/lib/enigma2/python/Plugins/Components/Renderer -type f -name "COC*.pyo" -exec rm -f {} \; > /dev/null 2>&1
+	find /usr/lib/enigma2/python/Plugins/Components/Converter -type f -name "COC*.pyo" -exec rm -f {} \; > /dev/null 2>&1
+	find /usr/lib/enigma2/python/Plugins/Components/Sources -type f -name "COC*.pyo" -exec rm -f {} \; > /dev/null 2>&1
+fi
+exit 0

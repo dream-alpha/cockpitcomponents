@@ -1,0 +1,11 @@
+#!/bin/sh
+echo "***********************************"
+echo "*        ComponentsCockpit        *"
+echo "*               by                *"
+echo "*          dream-alpha            *"
+echo "***********************************"
+echo ""
+echo "Plugin ComponentsCockpit installed successfully."
+echo "Please restart DreamOS now!"
+echo ""
+exit 0
